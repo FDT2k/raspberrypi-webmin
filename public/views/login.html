@@ -1,0 +1,38 @@
+<section class="section section-basic">
+	<div class="animate-up section-box">
+	<h1><translate>SE CONNECTER</translate></h1>
+		<br style="clear:both;"/>
+
+	<div class="span12">
+		
+		<br style="clear:both;"/>
+		<div class="row">
+			<div class="col-sm-12">
+				<form method="post" ng-submit="login()" class="form-horizontal" name="register">
+					<input type="hidden" name="country_code" value=""/>
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="inputEmail"><translate>Utilisateur</translate></label>
+						<div class="col-sm-5">
+							<input type="text" id="inputEmail" ng-model="username" class="form-control minLength:1" value="" autocomplete="off" name="email" placeholder="Email"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="inputEmail"><translate>Mot de passe</translate></label>
+						<div class="col-sm-5">
+							<input type="password" id="inputEmail" ng-model="password" class="form-control minlength:1" value="" autocomplete="off" name="password" placeholder="Mot de passe"/>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-10 ">
+							<button class="btn btn-primary" type="submit" ng-disabled="form.$invalid || dataLoading" >Se connecter</button> &nbsp;
+							<img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
