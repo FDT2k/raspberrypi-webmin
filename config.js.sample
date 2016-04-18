@@ -1,0 +1,13 @@
+var config = {};
+
+config.JWT_KEY="abcdefg"; //CHANGE THIS
+
+config.JWT_CONFIG = {
+  expiresIn: "20m",
+  notBeforeMinutes: 0
+};
+
+config.JWT_RENEW=true;
+config.JWT_RENEW_DELAY=5*60;
+
+module.exports = config;
